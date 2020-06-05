@@ -5,12 +5,13 @@ import java.sql.SQLException;
 
 import org.springframework.jdbc.core.RowMapper;
 
-import com.examplle.examplespringboot.model.Customer;
 
-public class CustomerRowMapper implements RowMapper<Customer> {
+import com.examplle.examplespringboot.model.User;
+
+public class UserRowMapper implements RowMapper<User> {
 	
-	public Customer mapRow(ResultSet rs, int rowNum) throws SQLException {
-	 Customer user = new Customer();
+	public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+		User user = new User();
 	  //user.setCustNo(rs.getInt("id"));
 	  //user.setCustName(rs.getString("name"));
 	 user.setId(rs.getInt("id"));

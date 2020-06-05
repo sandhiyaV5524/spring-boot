@@ -1,11 +1,11 @@
 package com.examplle.examplespringboot.model;
 
-public class Customer {
+public class User {
 	public int id;
 	public String username;
 	public String emailId;
 public String password;
-Customer(int id, String username, String emailId, String password) {
+User(int id, String username, String emailId, String password) {
 		super();
 		this.id = id;
 		this.username = username;
@@ -37,7 +37,7 @@ Customer(int id, String username, String emailId, String password) {
 	
 
 
-    public Customer() {
+    public User() {
     }
 
 
